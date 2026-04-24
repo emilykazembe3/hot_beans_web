@@ -1,8 +1,78 @@
-/* HOT BEANS WEB - MASTER STYLE SHEET 
-   Theme: Modern Tech Agency (AVAMAE Inspired)
-*/
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Recommended tech-font*/
+}
 
-/* 1. GLOBAL SETTINGS & THEME */
+/* Design 2: Light Theme (Alternative Design) */
+.light-theme {
+    background-color: #E0E0E0;
+    color: #333333;
+}
+
+.light-theme .cta-button, 
+.light-theme .nav-contact {
+    background-color: #81C7FD; /* Soft Blue accent */
+    color: white;
+}
+
+/* Navigation Layout  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.2);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: 0.3s; /* Rollover effect  */
+}
+
+/* Hero Section Grid  */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 80px 50px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 10px;
+}
 :root {
     --bg-main: #0f172a;        /* Dark Slate Blue */
     --bg-card: #1e293b;        /* Lighter Slate for Cards */
@@ -12,7 +82,31 @@
     --text-muted: #94a3b8;     /* Grayish Blue */
     --border: #334155;         /* Subtle Border */
 }
+/* Banner Image Styling */
+.site-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Default Color */
+    transition: 0.4s; /* Makes the transition smooth */
+}
+
+
+.btn:hover {
+    background-color: #FF3B3F; 
+    transform: scale(1.1); 
+
+.apply-now {
+    background-color: #FF3B3F;
+    font-weight: bold;
+}
 * {
     margin: 0;
     padding: 0;
