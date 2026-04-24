@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    background-color: #121212; /* Dark Theme */
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+/* Navigation Grid */
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Rollover Button Simulation */
+.nav-btn {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #444;
+    color: #00d4ff; /* Tech Blue */
+    border-bottom: 3px solid #00d4ff;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+/* Form Styles */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #333;
+    border: 1px solid #444;
+    color: white;
+}
+
+button {
+    background: #00d4ff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
